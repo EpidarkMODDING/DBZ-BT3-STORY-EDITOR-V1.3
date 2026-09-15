@@ -33,7 +33,7 @@ jobs:
 
       - name: Build EXE with PyInstaller
         run: |
-          pyinstaller --noconfirm --onedir --windowed --name "DBZ_STORY_EDITOR_1.3" "DBZ STORY EDITOR 1.3.py"
+          pyinstaller --noconfirm --onedir --windowed --icon="BT3_no_green.ico" --name "DBZ_STORY_EDITOR_1.3" "DBZ STORY EDITOR 1.3.py"
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
